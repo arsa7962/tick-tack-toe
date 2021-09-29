@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Time</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="loader"></div>
+    <div class="board" id="board">
+      <div class="details">
+        <div class="players">
+          <span class="Xturn">X's Turn</span>
+          <span class="Oturn">O's Turn</span>
+          <div class="slider"></div>
+        </div>
+      </div>
+      <div class="play-area">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+    </div>
+    <div class="result" id="result">
+      <div id="winning-msg">X Wins!</div>
+      <button id="restartBtn" class="shakeMe" onclick="startGame()">
+        Restart
+      </button>
+    </div>
+    
+  </body>
+</html>
